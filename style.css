@@ -1,0 +1,104 @@
+/* Warna dasar */
+:root {
+  --blue: #4a90e2;
+  --green: #7ed321;
+  --yellow: #f8e71c;
+  --pink: #d0021b;
+  --orange: #f5a623;
+  --white: #ffffff;
+  --gray-light: #f4f4f4;
+  --gray-dark: #333333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--gray-light);
+  margin: 0;
+  color: var(--gray-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  background: var(--white);
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+  color: var(--green);
+  margin-top: 0;
+}
+
+input[type="text"], input[type="time"] {
+  padding: 0.5rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  width: 60%;
+  max-width: 300px;
+}
+
+button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--pink);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--gray-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
+  margin-top: auto;
+}
+
+#focus-timer {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
