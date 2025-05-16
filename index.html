@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edureminder - Pengingat Belajar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Edureminder</h1>
+    <p>Teman belajar cerdasmu!</p>
+  </header>
+
+  <main>
+    <section id="schedule-section">
+      <h2>Jadwal Belajar Cerdas</h2>
+      <input type="text" id="subject-input" placeholder="Tambah mata pelajaran atau topik..." />
+      <button id="add-subject-btn">Tambah</button>
+      <ul id="schedule-list"></ul>
+    </section>
+
+    <section id="reminder-section">
+      <h2>Notifikasi & Reminder</h2>
+      <label>Set Waktu Reminder: <input type="time" id="reminder-time" /></label>
+      <button id="set-reminder-btn">Set Reminder</button>
+      <p id="reminder-msg"></p>
+    </section>
+
+    <section id="focus-section">
+      <h2>Mode Fokus (Pomodoro)</h2>
+      <button id="start-focus-btn">Mulai Fokus 25 menit</button>
+      <p id="focus-timer">25:00</p>
+      <button id="stop-focus-btn" disabled>Berhenti</button>
+      <audio id="ambient-sound" loop>
+        <source src="https://cdn.pixabay.com/download/audio/2022/10/20/audio_fefb7dbd5e.mp3?filename=relaxing-water-sound-11521.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <section id="progress-section">
+      <h2>Progress Tracker</h2>
+      <p>Jam belajar minggu ini: <span id="hours-learned">0</span> jam</p>
+      <p>Topik diselesaikan: <span id="topics-completed">0</span></p>
+      <button id="reset-progress-btn">Reset Progress</button>
+    </section>
+
+    <section id="flashcard-section">
+      <h2>Flashcard & Review Harian</h2>
+      <input type="text" id="flashcard-question" placeholder="Masukkan pertanyaan..." />
+      <input type="text" id="flashcard-answer" placeholder="Masukkan jawaban..." />
+      <button id="add-flashcard-btn">Tambah Flashcard</button>
+      <ul id="flashcard-list"></ul>
+    </section>
+
+    <section id="calendar-section">
+      <h2>Integrasi Kalender (Dummy)</h2>
+      <p>Fitur integrasi kalender Google Calendar akan datang.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Edureminder</p>
+  </footer>
+
+  <script src="schedule.js"></script>
+  <script src="reminder.js"></script>
+  <script src="focus.js"></script>
+  <script src="progress.js"></script>
+  <script src="flashcard.js"></script>
+  <script src="calendar.js"></script>
+</body>
+</html>
